@@ -12,3 +12,26 @@ v18.17.1
 
 v8
 
+
+#### nodemon
+
+可以使 express 框架实现热更新
+
+1. 安装 nodemon
+```
+npm install nodemon -g --save-dev
+```
+
+2. package.json 中修改启动命令
+```
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+```
+修改为
+```
+  "scripts": {
+    "start": "nodemon ./bin/www"
+  },
+```
+
